@@ -1,56 +1,73 @@
 {
-    "libros": [
-        {
-            "nombre": "Cien años de soledad",
-            "autor": "Gabriel García Márquez",
-            "imagen": "https://ejemplo.com/imagen1.jpg",
-            "calificacion": 5,
-            "paginas_totales": 432,
-            "reviews_totales": 12500,
-            "comentarios_totales": 8700,
-            "resumen": "Una saga familiar en el pueblo ficticio de Macondo, donde lo real y lo mágico se entrelazan en una narrativa épica sobre el amor, la soledad y el destino."
-        },
-        {
-            "nombre": "1984",
-            "autor": "George Orwell",
-            "imagen": "https://ejemplo.com/imagen2.jpg",
-            "calificacion": 4,
-            "paginas_totales": 328,
-            "reviews_totales": 9800,
-            "comentarios_totales": 6500,
-            "resumen": "En un futuro distópico, Winston Smith lucha contra un régimen totalitario que controla cada aspecto de la vida, incluyendo el pensamiento y la historia."
-        },
-        {
-            "nombre": "El Principito",
-            "autor": "Antoine de Saint-Exupéry",
-            "imagen": "https://ejemplo.com/imagen3.jpg",
-            "calificacion": 5,
-            "paginas_totales": 96,
-            "reviews_totales": 15000,
-            "comentarios_totales": 12000,
-            "resumen": "Un piloto perdido en el desierto conoce a un pequeño príncipe de otro planeta, quien le enseña valiosas lecciones sobre la vida, el amor y la amistad."
-        },
-        {
-            "nombre": "Orgullo y prejuicio",
-            "autor": "Jane Austen",
-            "imagen": "https://ejemplo.com/imagen4.jpg",
-            "calificacion": 4,
-            "paginas_totales": 279,
-            "reviews_totales": 8500,
-            "comentarios_totales": 5200,
-            "resumen": "La historia de Elizabeth Bennet y el señor Darcy, dos personas cuyos prejuicios iniciales dan paso a un romance lleno de ingenio y tensión social."
-        },
-        {
-            "nombre": "Don Quijote de la Mancha",
-            "autor": "Miguel de Cervantes",
-            "imagen": "https://ejemplo.com/imagen5.jpg",
-            "calificacion": 4,
-            "paginas_totales": 1023,
-            "reviews_totales": 7600,
-            "comentarios_totales": 4300,
-            "resumen": "Las aventuras de un hidalgo enloquecido por leer demasiados libros de caballerías, que junto a su fiel escudero Sancho Panza, lucha contra molinos de viento y otras fantasías."
-        }
-    ],
-    "misLibros": [],
-    "guardados": []
+  "libros": [
+    {
+      "id": "1",
+      "nombre": "Cien años de soledad",
+      "autor": "Gabriel García Márquez",
+      "imagen": "https://ejemplo.com/imagen1.jpg",
+      "calificacion": 5,
+      "paginas_totales": 432,
+      "reviews_totales": 12500,
+      "comentarios_totales": 8700,
+      "resumen": "Una saga familiar en el pueblo ficticio de Macondo, donde lo real y lo mágico se entrelazan en una narrativa épica sobre el amor, la soledad y el destino."
+    },
+    {
+      "id": "2",
+      "nombre": "1984",
+      "autor": "George Orwell",
+      "imagen": "https://ejemplo.com/imagen2.jpg",
+      "calificacion": 4,
+      "paginas_totales": 328,
+      "reviews_totales": 9800,
+      "comentarios_totales": 6500,
+      "resumen": "En un futuro distópico, Winston Smith lucha contra un régimen totalitario que controla cada aspecto de la vida, incluyendo el pensamiento y la historia."
+    },
+    {
+      "id": "3",
+      "nombre": "El Principito",
+      "autor": "Antoine de Saint-Exupéry",
+      "imagen": "https://ejemplo.com/imagen3.jpg",
+      "calificacion": 5,
+      "paginas_totales": 96,
+      "reviews_totales": 15000,
+      "comentarios_totales": 12000,
+      "resumen": "Un piloto perdido en el desierto conoce a un pequeño príncipe de otro planeta, quien le enseña valiosas lecciones sobre la vida, el amor y la amistad."
+    },
+    {
+      "id": "4",
+      "nombre": "Orgullo y prejuicio",
+      "autor": "Jane Austen",
+      "imagen": "https://ejemplo.com/imagen4.jpg",
+      "calificacion": 4,
+      "paginas_totales": 279,
+      "reviews_totales": 8500,
+      "comentarios_totales": 5200,
+      "resumen": "La historia de Elizabeth Bennet y el señor Darcy, dos personas cuyos prejuicios iniciales dan paso a un romance lleno de ingenio y tensión social."
+    },
+    {
+      "id": 5,
+      "nombre": "Don Quijote de la Mancha",
+      "autor": "Miguel de Cervantes",
+      "imagen": "https://ejemplo.com/imagen5.jpg",
+      "calificacion": 4,
+      "paginas_totales": 1023,
+      "reviews_totales": 7600,
+      "comentarios_totales": 4300,
+      "resumen": "Las aventuras de un hidalgo enloquecido por leer demasiados libros de caballerías, que junto a su fiel escudero Sancho Panza, lucha contra molinos de viento y otras fantasías."
+    }
+  ],
+  "misLibros": [],
+  "guardados": [
+    {
+      "id": "1",
+      "nombre": "Cien años de soledad",
+      "autor": "Gabriel García Márquez",
+      "imagen": "https://ejemplo.com/imagen1.jpg",
+      "calificacion": 5,
+      "paginas_totales": 432,
+      "reviews_totales": 12500,
+      "comentarios_totales": 8700,
+      "resumen": "Una saga familiar en el pueblo ficticio de Macondo, donde lo real y lo mágico se entrelazan en una narrativa épica sobre el amor, la soledad y el destino."
+    }
+  ]
 }

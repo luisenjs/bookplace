@@ -1,5 +1,5 @@
+import { Outlet } from "react-router";
 import { BookProvider } from "../context/librocontext";
-import { LibrosLayout } from "./libroslayout";
 import { SidebarLayout } from "./sidebarlayout";
 import { TopbarLayout } from "./topbarlayout";
 
@@ -13,9 +13,9 @@ export function MainLayout() {
                 <div className="bg-gray-200 flex-none h-20 content-center p-4">
                     <TopbarLayout></TopbarLayout>
                 </div>
-                <div className="h-full">
+                <div className="h-full w-full">
                     <BookProvider>
-                        <LibrosLayout></LibrosLayout>
+                        <Outlet />
                     </BookProvider>
                 </div>
             </div>

@@ -15,25 +15,14 @@ export const BookContext = createContext<BookContextType>({
 
 export function BookProvider({ children }: { children: React.ReactNode }) {
 
-    const defaultLibro: Libro = {
-        nombre: "",
-        autor: "",
-        imagen: "",
-        calificacion: 0,
-        paginas_totales: 0,
-        reviews_totales: 0,
-        comentarios_totales: 0,
-        resumen: ""
-    }
-
-    const [libro, setLibro] = useState<Libro>(defaultLibro);
+    const [libro, setLibro] = useState<Libro | null>(null);
 
     function selectLibro(libro: Libro) {
         setLibro(libro);
     }
 
     function deselectLibro() {
-        setLibro(defaultLibro);
+        setLibro(null);
     }
 
     return (

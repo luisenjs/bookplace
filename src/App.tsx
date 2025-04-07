@@ -1,9 +1,9 @@
-import { MainLayout } from './layout/mainlayout'
+import { MainRoutes } from './navigation/mainroutes'
 
 function App() {
 
   return (
-    <MainLayout></MainLayout>
+    <MainRoutes></MainRoutes>
   )
 }
 
