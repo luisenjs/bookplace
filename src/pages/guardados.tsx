@@ -1,7 +1,7 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
 import { Card } from "../components/card"
-import { Libro } from "../interfaces/interfaces"
+import { Libro } from "../interfaces/libro"
 
 export function SavedBooks() {
 
@@ -30,10 +30,10 @@ export function SavedBooks() {
             <div className="flex flex-row flex-wrap gap-4 overflow-auto">
                 {guardados && guardados.map((libro, index) => (
                     <Card key={index} className="flex flex-col gap-3 p-3 rounded-lg bg-slate-300 text-center min-h-60 w-44">
-                        <div className="bg-gray-400 text-center min-h-40 w-full content-center rounded-lg">imagen</div>
+                        <img className="bg-gray-400 text-center h-60 w-40 content-center rounded-lg" src={libro.coverImage} alt={`cover de ${libro.title}`} />
                         <div className="grow">
-                            <p>{libro.nombre}</p>
-                            <p>{libro.autor}</p>
+                            <p>{libro.title}</p>
+                            <p>{libro.author}</p>
                         </div>
                         <button className="flex bg-sky-400 rounded-lg p-2" onClick={() => { eliminar(libro.id) }}>Eliminar de guardados</button>
                     </Card>

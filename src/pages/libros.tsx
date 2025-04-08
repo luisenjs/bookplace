@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { Card } from "../components/card";
-import { Libro } from "../interfaces/interfaces";
+import { Libro } from "../interfaces/libro";
 import axios from "axios";
 import { BookContext } from "../context/librocontext";
 import { ChevronRight } from "lucide-react";
@@ -29,10 +29,10 @@ export function Libros() {
             <div className="flex flex-row flex-wrap gap-4 overflow-auto">
                 {libros && libros.map((libro, index) => (
                     <Card key={index} onClick={() => selectLibro(libro)} className="flex flex-col gap-3 p-3 rounded-lg bg-slate-300 text-center min-h-60 w-44">
-                        <div className="bg-gray-400 text-center min-h-40 w-full content-center rounded-lg">imagen</div>
+                        <img className="bg-gray-400 text-center h-60 w-40 content-center rounded-lg" src={libro.coverImage} alt={`cover de ${libro.title}`} />
                         <div>
-                            <p>{libro.nombre}</p>
-                            <p>{libro.autor}</p>
+                            <p className="italic">{libro.title}</p>
+                            <p>{libro.author}</p>
                         </div>
                     </Card>
                 ))}
