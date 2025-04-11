@@ -1,73 +1,239 @@
 {
   "libros": [
     {
-      "id": "1",
-      "nombre": "Cien años de soledad",
-      "autor": "Gabriel García Márquez",
-      "imagen": "https://ejemplo.com/imagen1.jpg",
-      "calificacion": 5,
-      "paginas_totales": 432,
-      "reviews_totales": 12500,
-      "comentarios_totales": 8700,
-      "resumen": "Una saga familiar en el pueblo ficticio de Macondo, donde lo real y lo mágico se entrelazan en una narrativa épica sobre el amor, la soledad y el destino."
+      "id": "ISBN-9788445000667",
+      "title": "El Señor de los Anillos: La Comunidad del Anillo",
+      "author": "J.R.R. Tolkien",
+      "publisher": "Minotauro",
+      "publishedYear": 1954,
+      "genre": [
+        "Fantasía épica",
+        "Aventura"
+      ],
+      "language": "español",
+      "pages": 576,
+      "summary": "Frodo Bolsón hereda un anillo mágico que resulta ser el objeto más peligroso de la Tierra Media. Junto a una compañía de elfos, enanos y hombres, emprende un viaje para destruirlo en el Monte del Destino, mientras fuerzas oscuras los persiguen. Una obra maestra sobre la amistad, el sacrificio y la lucha contra la corrupción.",
+      "reviews": [
+        {
+          "userId": "user_elfo23",
+          "username": "LegolasFan",
+          "comment": "¡La construcción del mundo de Tolkien es asombrosa!",
+          "rating": 5,
+          "date": "2023-06-12"
+        },
+        {
+          "userId": "user_hobbit",
+          "username": "Samwise",
+          "comment": "El inicio es lento, pero luego no puedes soltarlo.",
+          "rating": 4,
+          "date": "2023-05-30"
+        }
+      ],
+      "coverImage": "https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/The_Fellowship_of_the_Ring_cover.gif/800px-The_Fellowship_of_the_Ring_cover.gif",
+      "rating": 5,
+      "available": true,
+      "tags": [
+        "anillo único",
+        "tierra media",
+        "sauron",
+        "aventura"
+      ]
     },
     {
-      "id": "2",
-      "nombre": "1984",
-      "autor": "George Orwell",
-      "imagen": "https://ejemplo.com/imagen2.jpg",
-      "calificacion": 4,
-      "paginas_totales": 328,
-      "reviews_totales": 9800,
-      "comentarios_totales": 6500,
-      "resumen": "En un futuro distópico, Winston Smith lucha contra un régimen totalitario que controla cada aspecto de la vida, incluyendo el pensamiento y la historia."
+      "id": "ISBN-9781451673319",
+      "title": "Fahrenheit 451",
+      "author": "Ray Bradbury",
+      "publisher": "Simon & Schuster",
+      "publishedYear": 1953,
+      "genre": [
+        "Distopía",
+        "Ciencia ficción"
+      ],
+      "language": "inglés",
+      "pages": 249,
+      "summary": "En un futuro donde los bomberos queman libros para suprimir el pensamiento crítico, Guy Montag comienza a cuestionar su rol. Una advertencia sobre la censura, la tecnología y la pérdida de humanidad.",
+      "reviews": [
+        {
+          "userId": "user_quemalibros",
+          "username": "Fireproof",
+          "comment": "Más relevante hoy que nunca. Bradbury era un visionario.",
+          "rating": 5,
+          "date": "2023-08-12"
+        }
+      ],
+      "coverImage": "https://upload.wikimedia.org/wikipedia/en/thumb/d/db/Fahrenheit_451_1st_ed_cover.jpg/800px-Fahrenheit_451_1st_ed_cover.jpg",
+      "rating": 5,
+      "available": true,
+      "tags": [
+        "censura",
+        "quema de libros",
+        "sociedad",
+        "rebeldía"
+      ]
     },
     {
-      "id": "3",
-      "nombre": "El Principito",
-      "autor": "Antoine de Saint-Exupéry",
-      "imagen": "https://ejemplo.com/imagen3.jpg",
-      "calificacion": 5,
-      "paginas_totales": 96,
-      "reviews_totales": 15000,
-      "comentarios_totales": 12000,
-      "resumen": "Un piloto perdido en el desierto conoce a un pequeño príncipe de otro planeta, quien le enseña valiosas lecciones sobre la vida, el amor y la amistad."
+      "id": "ISBN-9788427202122",
+      "title": "Los juegos del hambre",
+      "author": "Suzanne Collins",
+      "publisher": "Molino",
+      "publishedYear": 2008,
+      "genre": [
+        "Distopía",
+        "Juvenil"
+      ],
+      "language": "español",
+      "pages": 374,
+      "summary": "En un futuro postapocalíptico, Katniss Everdeen se ofrece como tributo para salvar a su hermana en unos juegos donde 24 jóvenes luchan a muerte. Una crítica social disfrazada de thriller adictivo, con un triángulo amoroso secundario.",
+      "reviews": [
+        {
+          "userId": "user_katniss",
+          "username": "ChicaEnLlamas",
+          "comment": "Devoré este libro en una noche. ¡Katniss es mi heroína!",
+          "rating": 5,
+          "date": "2023-01-15"
+        }
+      ],
+      "coverImage": "https://upload.wikimedia.org/wikipedia/en/thumb/3/39/The_Hunger_Games_cover.jpg/800px-The_Hunger_Games_cover.jpg",
+      "rating": 4,
+      "available": true,
+      "tags": [
+        "distopía",
+        "realidad tv",
+        "rebelión",
+        "survival"
+      ]
     },
     {
-      "id": "4",
-      "nombre": "Orgullo y prejuicio",
-      "autor": "Jane Austen",
-      "imagen": "https://ejemplo.com/imagen4.jpg",
-      "calificacion": 4,
-      "paginas_totales": 279,
-      "reviews_totales": 8500,
-      "comentarios_totales": 5200,
-      "resumen": "La historia de Elizabeth Bennet y el señor Darcy, dos personas cuyos prejuicios iniciales dan paso a un romance lleno de ingenio y tensión social."
-    },
-    {
-      "id": 5,
-      "nombre": "Don Quijote de la Mancha",
-      "autor": "Miguel de Cervantes",
-      "imagen": "https://ejemplo.com/imagen5.jpg",
-      "calificacion": 4,
-      "paginas_totales": 1023,
-      "reviews_totales": 7600,
-      "comentarios_totales": 4300,
-      "resumen": "Las aventuras de un hidalgo enloquecido por leer demasiados libros de caballerías, que junto a su fiel escudero Sancho Panza, lucha contra molinos de viento y otras fantasías."
+      "id": "ISBN-9780156012195",
+      "title": "El Principito",
+      "author": "Antoine de Saint-Exupéry",
+      "publisher": "Reynal & Hitchcock",
+      "publishedYear": 1943,
+      "genre": [
+        "Fábula",
+        "Filosófico"
+      ],
+      "language": "español",
+      "pages": 96,
+      "summary": "Un piloto perdido en el desierto conoce a un niño proveniente de un asteroide lejano. A través de diálogos aparentemente simples, el libro explora el amor, la pérdida y la esencia de la humanidad. Una joya para niños y adultos.",
+      "reviews": [
+        {
+          "userId": "user_rosa",
+          "username": "B612Lover",
+          "comment": "Lo releo cada año y siempre encuentro algo nuevo.",
+          "rating": 5,
+          "date": "2023-02-14"
+        }
+      ],
+      "coverImage": "https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Littleprince.JPG/800px-Littleprince.JPG",
+      "rating": 5,
+      "available": true,
+      "tags": [
+        "infancia",
+        "amistad",
+        "metáfora",
+        "universo"
+      ]
     }
   ],
-  "misLibros": [],
+  "misLibros": [
+    {
+      "id": "ISBN-9788427202122",
+      "title": "Los juegos del hambre",
+      "author": "Suzanne Collins",
+      "publisher": "Molino",
+      "publishedYear": 2008,
+      "genre": [
+        "Distopía",
+        "Juvenil"
+      ],
+      "language": "español",
+      "pages": 374,
+      "summary": "En un futuro postapocalíptico, Katniss Everdeen se ofrece como tributo para salvar a su hermana en unos juegos donde 24 jóvenes luchan a muerte. Una crítica social disfrazada de thriller adictivo, con un triángulo amoroso secundario.",
+      "reviews": [
+        {
+          "userId": "user_katniss",
+          "username": "ChicaEnLlamas",
+          "comment": "Devoré este libro en una noche. ¡Katniss es mi heroína!",
+          "rating": 5,
+          "date": "2023-01-15"
+        }
+      ],
+      "coverImage": "https://upload.wikimedia.org/wikipedia/en/thumb/3/39/The_Hunger_Games_cover.jpg/800px-The_Hunger_Games_cover.jpg",
+      "rating": 4,
+      "available": true,
+      "tags": [
+        "distopía",
+        "realidad tv",
+        "rebelión",
+        "survival"
+      ]
+    },
+    {
+      "id": "ISBN-9780156012195",
+      "title": "El Principito",
+      "author": "Antoine de Saint-Exupéry",
+      "publisher": "Reynal & Hitchcock",
+      "publishedYear": 1943,
+      "genre": [
+        "Fábula",
+        "Filosófico"
+      ],
+      "language": "español",
+      "pages": 96,
+      "summary": "Un piloto perdido en el desierto conoce a un niño proveniente de un asteroide lejano. A través de diálogos aparentemente simples, el libro explora el amor, la pérdida y la esencia de la humanidad. Una joya para niños y adultos.",
+      "reviews": [
+        {
+          "userId": "user_rosa",
+          "username": "B612Lover",
+          "comment": "Lo releo cada año y siempre encuentro algo nuevo.",
+          "rating": 5,
+          "date": "2023-02-14"
+        }
+      ],
+      "coverImage": "https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Littleprince.JPG/800px-Littleprince.JPG",
+      "rating": 5,
+      "available": true,
+      "tags": [
+        "infancia",
+        "amistad",
+        "metáfora",
+        "universo"
+      ]
+    }
+  ],
   "guardados": [
     {
-      "id": "1",
-      "nombre": "Cien años de soledad",
-      "autor": "Gabriel García Márquez",
-      "imagen": "https://ejemplo.com/imagen1.jpg",
-      "calificacion": 5,
-      "paginas_totales": 432,
-      "reviews_totales": 12500,
-      "comentarios_totales": 8700,
-      "resumen": "Una saga familiar en el pueblo ficticio de Macondo, donde lo real y lo mágico se entrelazan en una narrativa épica sobre el amor, la soledad y el destino."
+      "id": "ISBN-9788427202122",
+      "title": "Los juegos del hambre",
+      "author": "Suzanne Collins",
+      "publisher": "Molino",
+      "publishedYear": 2008,
+      "genre": [
+        "Distopía",
+        "Juvenil"
+      ],
+      "language": "español",
+      "pages": 374,
+      "summary": "En un futuro postapocalíptico, Katniss Everdeen se ofrece como tributo para salvar a su hermana en unos juegos donde 24 jóvenes luchan a muerte. Una crítica social disfrazada de thriller adictivo, con un triángulo amoroso secundario.",
+      "reviews": [
+        {
+          "userId": "user_katniss",
+          "username": "ChicaEnLlamas",
+          "comment": "Devoré este libro en una noche. ¡Katniss es mi heroína!",
+          "rating": 5,
+          "date": "2023-01-15"
+        }
+      ],
+      "coverImage": "https://upload.wikimedia.org/wikipedia/en/thumb/3/39/The_Hunger_Games_cover.jpg/800px-The_Hunger_Games_cover.jpg",
+      "rating": 4,
+      "available": true,
+      "tags": [
+        "distopía",
+        "realidad tv",
+        "rebelión",
+        "survival"
+      ]
     }
   ]
 }

@@ -20,7 +20,7 @@ export function Libros() {
     }
 
     return (
-        <div className="flex flex-col gap-3 p-4 h-full">
+        <div className="flex flex-col gap-3 p-4 h-full bg-gray-100 rounded-3xl">
             <div className="flex flex-row justify-between">
                 <h2 className="text-2xl font-semibold">Todos los libros</h2>
             </div>
