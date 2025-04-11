@@ -25,7 +25,7 @@ export function SavedBooks() {
     return (
         <div className="flex flex-col gap-3 p-4 h-full">
             <div className="flex flex-row justify-between">
-                <p>Mis libros guardados</p>
+                <h2 className="text-2xl font-semibold"  >Mis libros guardados</h2>
             </div>
             <div className="flex flex-row flex-wrap gap-4 overflow-auto">
                 {guardados && guardados.map((libro, index) => (

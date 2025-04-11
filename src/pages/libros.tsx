@@ -3,7 +3,6 @@ import { Card } from "../components/card";
 import { Libro } from "../interfaces/libro";
 import axios from "axios";
 import { BookContext } from "../context/librocontext";
-import { ChevronRight } from "lucide-react";
 
 export function Libros() {
 
@@ -23,8 +22,7 @@ export function Libros() {
     return (
         <div className="flex flex-col gap-3 p-4 h-full">
             <div className="flex flex-row justify-between">
-                <p>Todos los libros</p>
-                <button className="bg-sky-200 text-blue-600 p-1 p rounded-lg flex">Ver todos<ChevronRight /></button>
+                <h2 className="text-2xl font-semibold">Todos los libros</h2>
             </div>
             <div className="flex flex-row flex-wrap gap-4 overflow-auto">
                 {libros && libros.map((libro, index) => (

@@ -11,13 +11,20 @@ export function BookLayout() {
     const { libro, deselectLibro } = useContext(BookContext);
 
     async function guardadLibro(libro: Libro) {
-        const body = JSON.stringify(libro);
-        await axios.post("http://localhost:3000/guardados/", body, {
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        })
-        toast.success("Libro guardado correctamente");
+        const { data } = await axios.get("http://localhost:3000/guardados/");
+        console.log(libro.id)
+        const isSaved = data.some((guardado: Libro) => guardado.id === libro.id);
+        if (!isSaved) {
+            const body = JSON.stringify(libro);
+            await axios.post("http://localhost:3000/guardados/", body, {
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            toast.success("Libro guardado correctamente");
+        } else {
+            toast.info("El libro ya está guardado");
+        }
     }
 
     return (
@@ -51,7 +58,7 @@ export function BookLayout() {
                                 <p>Reviews</p>
                             </div>
                         </div>
-                        <button className="bg-sky-600 rounded-lg p-3 w-60 flex gap-2 justify-center" onClick={() => { guardadLibro(libro) }}>Guardar libro<ArrowDownToLine /></button>
+                        <button className="bg-sky-600 rounded-lg p-3 w-60 flex gap-2 justify-center hover:-translate-y-0.5 active:translate-1" onClick={() => { guardadLibro(libro) }}>Guardar libro<ArrowDownToLine /></button>
                     </div></>
                 :
                 <div className="p-4">
