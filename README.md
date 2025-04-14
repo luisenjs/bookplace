@@ -1,54 +1,21 @@
-# React + TypeScript + Vite
+# Biblioteca virtual
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción
 
-Currently, two official plugins are available:
+Este proyecto trata sobre una biblioteca en línea, en la cual se pueden ver diferentes libros de la comunidad, crear tus propios libros y guardar los que más te gusten. Adicionalmente se pueden ver más información sobre ellos y compartirlos con otors.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Flujo para ver más información del libro
 
-## Expanding the ESLint configuration
+1. Dar clic en un libro.
+2. Dar clic en el icono de ver en pantalla completa (*Chevron a la izquierda*).
+3. Se depliega una nueva página con más información del libro.
+4. Puede compartir la nueva página dando clic en compratir.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Pasos para ejecutar
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+1. Clonar el repositorio.
+2. Ejecutar ```npm i```.
+3. Levantar el back con ```npm run back``` (*Para una mejor experiencia se recomienda crear el back en una carpeta fuera del proyecto*)
+4. Levantar el proyecto con ```npm run dev```
+5. Visitar el proyecto [aquí](http://localhost:5173/)
+6. Puede visitar los endpoints en http://localhost:3000/ *nombre-del-endpoint (libros, misLibros, guardados)*
