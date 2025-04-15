@@ -35,15 +35,15 @@ export function NewBook({ isOpen, onClose }: newbookprops) {
                         <input type="text" {...register("id")} id="id" placeholder="ISBN-9080020202020" className="outline-none focus:ring-2 focus:ring-blue-300 w-full border border-gray-400 rounded-lg p-1" />
                     </div>
                     <div className="flex flex-col w-full">
-                        <label className="text-sky-600 font-bold" htmlFor="title">Título</label>
+                        <label className="font-bold" htmlFor="title">Título</label>
                         <input type="text" {...register("title")} id="title" placeholder="Cien años de soledad" className="outline-none focus:ring-2 focus:ring-blue-300 w-full border border-gray-400 rounded-lg p-1" />
                     </div>
                     <div className="flex flex-col w-full">
-                        <label className="text-sky-600 font-bold" htmlFor="author">Autor(a)</label>
+                        <label className="font-bold" htmlFor="author">Autor(a)</label>
                         <input type="text" {...register("author")} id="author" placeholder="Paquita la del barrio" className="outline-none focus:ring-2 focus:ring-blue-300 w-full border border-gray-400 rounded-lg p-1" />
                     </div>
                     <div className="flex flex-col w-full">
-                        <label className="text-sky-600 font-bold" htmlFor="pages">Páginas totales</label>
+                        <label className="font-bold" htmlFor="pages">Páginas totales</label>
                         <input type="text" {...register("pages")} id="pages" placeholder="500" className="outline-none focus:ring-2 focus:ring-blue-300 w-full border border-gray-400 rounded-lg p-1" />
                     </div>
                     <button type="submit" className="bg-blue-500 rounded-lg px-5 py-1 text-white text-center hover:-translate-y-0.5 hover:shadow-md hover:shadow-gray-500 active:translate-1 active:shadow-none">Cerrar</button>

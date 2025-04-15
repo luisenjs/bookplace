@@ -4,7 +4,7 @@ import { NavLink } from "react-router";
 export function SidebarLayout() {
 
     return (
-        <div className="h-full">
+        <div className="h-full fixed">
             <div className="text-center p-8">
                 <p>BOOKPLACE</p>
             </div>

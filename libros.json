@@ -234,6 +234,38 @@
         "rebelión",
         "survival"
       ]
+    },
+    {
+      "id": "ISBN-9780156012195",
+      "title": "El Principito",
+      "author": "Antoine de Saint-Exupéry",
+      "publisher": "Reynal & Hitchcock",
+      "publishedYear": 1943,
+      "genre": [
+        "Fábula",
+        "Filosófico"
+      ],
+      "language": "español",
+      "pages": 96,
+      "summary": "Un piloto perdido en el desierto conoce a un niño proveniente de un asteroide lejano. A través de diálogos aparentemente simples, el libro explora el amor, la pérdida y la esencia de la humanidad. Una joya para niños y adultos.",
+      "reviews": [
+        {
+          "userId": "user_rosa",
+          "username": "B612Lover",
+          "comment": "Lo releo cada año y siempre encuentro algo nuevo.",
+          "rating": 5,
+          "date": "2023-02-14"
+        }
+      ],
+      "coverImage": "https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Littleprince.JPG/800px-Littleprince.JPG",
+      "rating": 5,
+      "available": true,
+      "tags": [
+        "infancia",
+        "amistad",
+        "metáfora",
+        "universo"
+      ]
     }
   ]
 }

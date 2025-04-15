@@ -5,6 +5,7 @@ import { LibrosLayout } from "../layout/libroslayout";
 import { SavedBooks } from "../pages/guardados";
 import { ToastContainer } from "react-toastify";
 import { MisLibros } from "../pages/mislibros";
+import { LibroDetalle } from "../pages/librodetalle";
 
 export function MainRoutes() {
     return (
@@ -14,6 +15,7 @@ export function MainRoutes() {
                     <Route path="/*" element={<Navigate to="/notfound" replace />} />
                     <Route path="/notfound" element={<NotFound />} />
                     <Route path="/libros" element={<LibrosLayout />} />
+                    <Route path="/libros/:libroid" element={<LibroDetalle/>} />
                     <Route path="/mis-libros" element={<MisLibros />} />
                     <Route path="/guardados" element={<SavedBooks />} />
                     <Route path="/settings" />

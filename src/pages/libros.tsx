@@ -20,20 +20,22 @@ export function Libros() {
     }
 
     return (
-        <div className="flex flex-col gap-3 p-4 h-full bg-gray-100 rounded-3xl">
-            <div className="flex flex-row justify-between">
-                <h2 className="text-2xl font-semibold">Todos los libros</h2>
-            </div>
-            <div className="flex flex-row flex-wrap gap-4 overflow-auto">
-                {libros && libros.map((libro, index) => (
-                    <Card key={index} onClick={() => selectLibro(libro)} className="flex flex-col gap-3 p-3 rounded-lg bg-slate-300 text-center min-h-60 w-44">
-                        <img className="bg-gray-400 text-center h-60 w-40 content-center rounded-lg" src={libro.coverImage} alt={`cover de ${libro.title}`} />
-                        <div>
-                            <p className="italic">{libro.title}</p>
-                            <p>{libro.author}</p>
-                        </div>
-                    </Card>
-                ))}
+        <div className="p-4 h-full bg-gray-200">
+            <div className="flex flex-col gap-3 p-4 h-full bg-white rounded-2xl">
+                <div className="flex flex-row justify-between">
+                    <h2 className="text-2xl font-semibold">Todos los libros</h2>
+                </div>
+                <div className="flex flex-row flex-wrap gap-4 overflow-auto">
+                    {libros && libros.map((libro, index) => (
+                        <Card key={index} onClick={() => selectLibro(libro)} className="flex flex-col gap-3 p-3 rounded-lg bg-slate-300 text-center min-h-60 w-44">
+                            <img className="bg-gray-400 text-center h-60 w-40 content-center rounded-lg" src={libro.coverImage} alt={`cover de ${libro.title}`} />
+                            <div>
+                                <p className="italic">{libro.title}</p>
+                                <p>{libro.author}</p>
+                            </div>
+                        </Card>
+                    ))}
+                </div>
             </div>
         </div>
     )

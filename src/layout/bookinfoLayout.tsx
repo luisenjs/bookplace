@@ -1,14 +1,17 @@
-import { useContext } from "react"
+import { useContext, useState } from "react"
 import { BookContext } from "../context/librocontext"
 import { Card } from "../components/card";
-import { ArrowDownToLine, Star, X } from "lucide-react";
+import { ArrowDownToLine, ChevronsLeft, Star, X } from "lucide-react";
 import { Libro } from "../interfaces/libro";
 import axios from "axios";
 import { toast } from "react-toastify";
+import { Link } from "react-router";
 
 export function BookLayout() {
 
     const { libro, deselectLibro } = useContext(BookContext);
+
+    const [isTooltipVisible, setIsTooltipVisible] = useState(false);
 
     async function guardadLibro(libro: Libro) {
         const { data } = await axios.get("http://localhost:3000/guardados/");
@@ -32,6 +35,10 @@ export function BookLayout() {
             {libro
                 ?
                 <>
+                    <Link to={`/libros/${libro.id}`} onMouseOver={() => { setIsTooltipVisible(true) }} onMouseOut={() => { setIsTooltipVisible(false) }} className="absolute left-1 top-2">
+                        <ChevronsLeft />
+                        {isTooltipVisible && <div className="absolute bg-gray-300 text-gray-800 px-2 text-nowrap rounded-lg -top-6 -translate-x-2/5">Ver en pantalla completa</div>}
+                    </Link>
                     <button onClick={deselectLibro} className="absolute right-1 top-2"><X /></button>
                     <div className="relative flex flex-col items-center">
                         <Card className="flex flex-col gap-3 p-3 rounded-lg text-center min-h-60 w-full">

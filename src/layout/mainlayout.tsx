@@ -13,7 +13,7 @@ export function MainLayout() {
                 <div className="bg-gray-100 flex-none h-20 content-center p-4">
                     <TopbarLayout></TopbarLayout>
                 </div>
-                <div className="h-full w-full p-5 bg-gray-200">
+                <div className="h-full w-full bg-gray-200">
                     <BookProvider>
                         <Outlet />
                     </BookProvider>
