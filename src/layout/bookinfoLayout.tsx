@@ -1,7 +1,7 @@
 import { useContext, useState } from "react"
 import { BookContext } from "../context/librocontext"
 import { Card } from "../components/card";
-import { ArrowDownToLine, ChevronsLeft, Star, X } from "lucide-react";
+import { ArrowDownToLine, Maximize, Star, X } from "lucide-react";
 import { Libro } from "../interfaces/libro";
 import axios from "axios";
 import { toast } from "react-toastify";
@@ -36,7 +36,7 @@ export function BookLayout() {
                 ?
                 <>
                     <Link to={`/libros/${libro.id}`} onMouseOver={() => { setIsTooltipVisible(true) }} onMouseOut={() => { setIsTooltipVisible(false) }} className="absolute left-1 top-2">
-                        <ChevronsLeft />
+                        <Maximize />
                         {isTooltipVisible && <div className="absolute bg-gray-300 text-gray-800 px-2 text-nowrap rounded-lg -top-6 -translate-x-2/5">Ver en pantalla completa</div>}
                     </Link>
                     <button onClick={deselectLibro} className="absolute right-1 top-2"><X /></button>

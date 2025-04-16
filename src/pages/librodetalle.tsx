@@ -21,12 +21,22 @@ export function LibroDetalle() {
         getLibro();
     })
 
+    function shareURL() {
+        navigator.clipboard.writeText(location.href)
+            .then(() => {
+                Swal.fire("Enlace copiado");
+            }).catch(error => {
+                Swal.fire("Hubo un problema");
+                console.log(error);
+            })
+    }
+
     return (
         <div className="bg-gray-200 p-4 h-full">
             <div className="p-4 bg-white rounded-2xl h-full flex flex-col">
                 <div className="flex justify-between">
                     <button onClick={() => navigate("/libros")} className="flex gap-2 p-1 px-2 bg-blue-950 text-white rounded-lg w-fit items-center"><ArrowLeft size={20} />Volver al inicio</button>
-                    <button onClick={() => Swal.fire("Enlace copiado")} className="flex gap-2 p-1 px-2 bg-blue-950 text-white rounded-lg w-fit items-center">Compartir libro <Share size={20} /></button>
+                    <button onClick={shareURL} className="flex gap-2 p-1 px-2 bg-blue-950 text-white rounded-lg w-fit items-center">Compartir libro <Share size={20} /></button>
                 </div>
                 <div className="w-full flex flex-col gap-4 items-center overflow-auto">
                     <div className="flex flex-col items-center">
